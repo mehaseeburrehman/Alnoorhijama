@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+      color:#5ac597;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:purple;
+      top: 130px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+
+    
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+
+@media (max-width:346px) {
+    nav .logoheadding {
+        font-size: 33px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    nav .logo .logoheadding p {
+        font-size: 13px;
+    }
+   
+
+}
+@media (max-width:276px) {
+    nav .logoheadding {
+        font-size: 25px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    nav .logo .logoheadding p {
+        font-size: 10px;
+    }
+}

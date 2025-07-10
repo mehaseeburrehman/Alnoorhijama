@@ -1,0 +1,38 @@
+
+
+                /* NAV RESPONSIVE */
+@media only screen and (max-width: 810px){
+.info{
+    display: none;
+}
+.information {
+    justify-content: center;
+}
+.info1{
+   display: block;
+   justify-content: center;
+ }
+ /* .box1{
+    width: 100vw;
+} */
+:root {
+    --main-bg-color: #5ac597;
+    --main-bg-color1: #5ac597;
+}
+.heading3{
+    font-size: 50px;
+}
+.box3{
+    display: flex;
+    justify-content: center;
+}
+}
+@media (max-width:600px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 10vh;
+        box-sizing: border-box;
+        
+    }
+}
