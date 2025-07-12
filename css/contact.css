@@ -1,11 +1,124 @@
 @import url('base.css');
-.container{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #5ac597;   /* for headings */
+    --main-bg-color1: #5ac597;  /* for bars */
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.information {
+    height: 50px;
+    background-color: var(--main-bg-color1);
+    display: flex;
+    align-items: center;
+    font-style: oblique;
+    color: white;
+    justify-content: space-between;
+}
+
+.info {
+    padding: 0px 23px;
+}
+
+.info1 {
+    display: none;
+}
+
+header {
+    background-color: white;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logoheadding {
+    font-size: 40px;
+}
+
+nav .logo .logoheadding p {
+    font-size: 15px;
+}
+
+nav .logo .logoheadding a {
+    color: purple;
+}
+
+nav .logoheadding:hover {
+    font-weight: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 12px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: var(--main-bg-color);
+    border-radius: 5px;
+}
+
+.frontpic {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.frontpic img {
+    width: 100%;
+}
+
+.container {
     background-color: white;
     color: aqua;
-    background-color:blue;
     display: flex;
     justify-content: center;
 }
 
-
-
+footer {
+    background-color: var(--main-bg-color1);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: oblique;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    color: white;
+}
