@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hijama Therapy in Lahore | Certified Hijama Therapist – Alnoor Hijama Center</title>
+    <meta name="description" content="Professional Hijama Therapy in Lahore by Certified Therapist Haseeb ur Rehman. Sunnah-based cupping therapy for natural healing, pain relief, and wellness.">
+    <meta name="keywords" content="Hijama Lahore, Cupping Therapy, Sunnah Healing, Hijama Therapist, Natural Healing, Islamic Medicine, Pain Relief">
+    <meta name="author" content="Alnoor Hijama Center">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .arabic-font { font-family: 'Amiri', serif; }
+        .inter-font { font-family: 'Inter', sans-serif; }
+        
+        .islamic-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.08'%3E%3Cpath d='M40 40c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm0 0c0 11.046 8.954 20 20 20s20-8.954 20-20-8.954-20-20-20-20 8.954-20 20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #059669, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .star-rating { color: #d4af37; }
+        
+        .slider {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slide {
+            display: none;
+            animation: slideIn 0.5s ease-in-out;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(100%); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .certificate-frame {
+            border: 8px solid #d4af37;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            background: linear-gradient(45deg, #f8f9fa, #ffffff);
+        }
+        
+        .gallery-item {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .hero-slide {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .hero-slide.active {
+            opacity: 1;
+        }
+        
+        .slider-dot.active {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body class="inter-font bg-white">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/923065884334" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp" style="margin-top:16px"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- <div class="text-xl md:text-2xl font-bold gradient-text">Alnoor Hijama Center</div> -->
+                <img src="logo.png" alt="Alnoor Hijama Logo" class="h-16 w-auto">
+                <div class="hidden lg:flex space-x-6 text-sm">
+                    <a href="#home" class="text-gray-700 hover:text-emerald-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-emerald-600 transition-colors">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-emerald-600 transition-colors">Services</a>
+                    <a href="#hadiths" class="text-gray-700 hover:text-emerald-600 transition-colors">Hadiths</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-emerald-600 transition-colors">Benefits</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-emerald-600 transition-colors">Reviews</a>
+                    <a href="#faq" class="text-gray-700 hover:text-emerald-600 transition-colors">FAQ</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-emerald-600 transition-colors">Gallery</a>
+                    <a href="#certificate" class="text-gray-700 hover:text-emerald-600 transition-colors">Certificate</a>
+                    <a href="#contact" class="text-gray-700 hover:text-emerald-600 transition-colors">Contact</a>
+                </div>
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-colors">
+                    Book Appointment
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Slider -->
+    <section id="home" class="relative min-h-screen overflow-hidden pt-16">
+        <!-- Main Banner Slider -->
+        <div class="hero-slider relative h-screen">
+            <!-- Slide 1 -->
+            <div class="hero-slide active absolute inset-0 bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="absolute inset-0 islamic-pattern opacity-20"></div>
+                <div class="relative z-10 h-full flex items-center">
+                    <div class="container mx-auto px-6">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div class="text-white fade-in">
+                                <h1 class="text-5xl md:text-7xl font-bold mb-6 arabic-font">
+                                    <span class="text-yellow-300">Alnoor</span><br>
+                                    <span class="text-white">Hijama Center</span>
+                                </h1>
+                                <p class="text-xl md:text-2xl mb-4 text-emerald-100">Certified Hijama Therapist</p>
+                                <p class="text-2xl md:text-3xl font-bold text-yellow-300 mb-8">Haseeb ur Rehman</p>
+                                
+                                <div class="flex flex-wrap gap-4 mb-8">
+                                    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-yellow-500 text-black px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                                        📞 Book Now
+                                    </button>
+                                    <a href="https://wa.me/923065884334" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                                        💬 WhatsApp
+                                    </a>
+                                </div>
+                                
+                                <div class="text-2xl md:text-3xl font-bold text-yellow-300">
+                                    <a href="tel:03065884334" class="hover:text-yellow-200 transition-colors">
+                                        📱 0306-5884334
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="relative">
+                                <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+                                    <div class="text-center text-white">
+                                        <div class="text-8xl mb-6">🌟</div>
+                                        <h3 class="text-3xl font-bold mb-4">Healing through Sunnah</h3>
+                                        <p class="text-xl text-emerald-100">Following prophetic traditions of natural healing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="hero-slide absolute inset-0 bg-gradient-to-br from-yellow-600 via-yellow-700 to-orange-700">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="absolute inset-0 islamic-pattern opacity-20"></div>
+                <div class="relative z-10 h-full flex items-center">
+                    <div class="container mx-auto px-6">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div class="relative">
+                                <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+                                    <div class="text-center text-white">
+                                        <div class="text-8xl mb-6">🏥</div>
+                                        <h3 class="text-3xl font-bold mb-4">Safe & Certified</h3>
+                                        <p class="text-xl text-yellow-100">Professional therapy with highest hygiene standards</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-white fade-in">
+                                <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                                    <span class="text-white">Professional</span><br>
+                                    <span class="text-yellow-300">Hijama Therapy</span>
+                                </h2>
+                                <p class="text-xl md:text-2xl mb-6 text-yellow-100">Certified • Clean • Effective</p>
+                                
+                                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8">
+                                    <p class="text-lg italic text-yellow-100 mb-4">
+                                        "Indeed the best of remedies you have is hijama (cupping)."
+                                    </p>
+                                    <p class="text-yellow-300 font-semibold">— Sahih Bukhari 5696</p>
+                                </div>
+                                
+                                <div class="flex flex-wrap gap-4">
+                                    <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})" class="bg-white text-yellow-700 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-50 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                                        🌿 Our Services
+                                    </button>
+                                    <a href="tel:03065884334" class="bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                                        📞 Call Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="hero-slide absolute inset-0 bg-gradient-to-br from-emerald-800 via-teal-700 to-emerald-900">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="absolute inset-0 islamic-pattern opacity-20"></div>
+                <div class="relative z-10 h-full flex items-center">
+                    <div class="container mx-auto px-6">
+                        <div class="text-center text-white fade-in">
+                            <div class="max-w-4xl mx-auto">
+                                <div class="text-8xl mb-8">🌿</div>
+                                <h2 class="text-5xl md:text-7xl font-bold mb-8 arabic-font">
+                                    <span class="text-emerald-300">Natural</span><br>
+                                    <span class="text-yellow-300">Wellness</span>
+                                </h2>
+                                
+                                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                                        <div class="text-4xl mb-4">💧</div>
+                                        <h3 class="text-xl font-bold mb-2">Detox Therapy</h3>
+                                        <p class="text-emerald-200">Deep body cleansing</p>
+                                    </div>
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                                        <div class="text-4xl mb-4">🧠</div>
+                                        <h3 class="text-xl font-bold mb-2">Pain Relief</h3>
+                                        <p class="text-emerald-200">Headache & migraine cure</p>
+                                    </div>
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                                        <div class="text-4xl mb-4">✨</div>
+                                        <h3 class="text-xl font-bold mb-2">Sunnah Healing</h3>
+                                        <p class="text-emerald-200">Prophetic medicine</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                                    <a href="https://wa.me/923065884334" target="_blank" class="bg-green-500 text-white px-10 py-5 rounded-full text-xl font-bold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                                        💬 Chat on WhatsApp
+                                    </a>
+                                    <button onclick="document.getElementById('reviews').scrollIntoView({behavior: 'smooth'})" class="bg-yellow-500 text-black px-10 py-5 rounded-full text-xl font-bold hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                                        ⭐ Client Reviews
+                                    </button>
+                                </div>
+                                
+                                <div class="text-3xl font-bold text-yellow-300">
+                                    📱 0306-5884334
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="hero-slide absolute inset-0 bg-gradient-to-br from-purple-800 via-indigo-700 to-purple-900">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="absolute inset-0 islamic-pattern opacity-20"></div>
+                <div class="relative z-10 h-full flex items-center">
+                    <div class="container mx-auto px-6">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div class="text-white fade-in">
+                                <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                                    <span class="text-purple-300">Experience</span><br>
+                                    <span class="text-yellow-300">The Difference</span>
+                                </h2>
+                                
+                                <div class="space-y-4 mb-8">
+                                    <div class="flex items-center text-xl">
+                                        <span class="text-3xl mr-4">✅</span>
+                                        <span>Certified Professional Therapist</span>
+                                    </div>
+                                    <div class="flex items-center text-xl">
+                                        <span class="text-3xl mr-4">✅</span>
+                                        <span>100% Hygienic & Safe Environment</span>
+                                    </div>
+                                    <div class="flex items-center text-xl">
+                                        <span class="text-3xl mr-4">✅</span>
+                                        <span>Following Islamic Guidelines</span>
+                                    </div>
+                                    <div class="flex items-center text-xl">
+                                        <span class="text-3xl mr-4">✅</span>
+                                        <span>Proven Results & Happy Clients</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8">
+                                    <div class="flex items-center justify-center space-x-2 text-2xl mb-4">
+                                        <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+                                    </div>
+                                    <p class="text-lg italic text-center text-purple-100">
+                                        "Best hijama therapy experience, Alhamdulillah!"
+                                    </p>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-yellow-500 to-orange-500 text-black px-12 py-5 rounded-full text-xl font-bold hover:from-yellow-400 hover:to-orange-400 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                                        🎯 Book Your Session Now!
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="relative">
+                                <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+                                    <div class="text-center text-white">
+                                        <div class="text-8xl mb-6">🏆</div>
+                                        <h3 class="text-3xl font-bold mb-4">Trusted by 100+</h3>
+                                        <p class="text-xl text-purple-100 mb-6">Happy & Healthy Clients</p>
+                                        
+                                        <div class="grid grid-cols-2 gap-4 text-center">
+                                            <div class="bg-white/10 rounded-xl p-4">
+                                                <div class="text-2xl font-bold text-yellow-300">5+</div>
+                                                <div class="text-sm text-purple-200">Years Experience</div>
+                                            </div>
+                                            <div class="bg-white/10 rounded-xl p-4">
+                                                <div class="text-2xl font-bold text-yellow-300">100+</div>
+                                                <div class="text-sm text-purple-200">Happy Clients</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Navigation Dots -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+            <div class="flex space-x-3">
+                <button class="slider-dot active w-4 h-4 rounded-full bg-white/80 hover:bg-white transition-all duration-300" onclick="goToSlide(0)"></button>
+                <button class="slider-dot w-4 h-4 rounded-full bg-white/50 hover:bg-white transition-all duration-300" onclick="goToSlide(1)"></button>
+                <button class="slider-dot w-4 h-4 rounded-full bg-white/50 hover:bg-white transition-all duration-300" onclick="goToSlide(2)"></button>
+                <button class="slider-dot w-4 h-4 rounded-full bg-white/50 hover:bg-white transition-all duration-300" onclick="goToSlide(3)"></button>
+            </div>
+        </div>
+        
+        <!-- Slider Arrow Navigation -->
+        <button class="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-300" onclick="previousSlide()">
+            <i class="fas fa-chevron-left text-xl"></i>
+        </button>
+        <button class="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-300" onclick="nextSlide()">
+            <i class="fas fa-chevron-right text-xl"></i>
+        </button>
+        
+        <!-- Social Media Links -->
+        <div class="absolute top-1/2 right-16 transform -translate-y-1/2 z-20 hidden lg:flex flex-col space-y-4">
+            <a href="https://facebook.com/AlnoorHijamacenter" target="_blank" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 shadow-lg">
+                <i class="fab fa-facebook text-xl"></i>
+            </a>
+            <a href="https://instagram.com/alnoor_hijama_therapy" target="_blank" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition-all duration-300 transform hover:scale-110 shadow-lg">
+                <i class="fab fa-instagram text-xl"></i>
+            </a>
+            <a href="https://alnoorhijama.store" target="_blank" class="bg-emerald-600 text-white p-3 rounded-full hover:bg-emerald-700 transition-all duration-300 transform hover:scale-110 shadow-lg">
+                <i class="fas fa-globe text-xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-emerald-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-8">About Haseeb ur Rehman</h2>
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I am Haseeb ur Rehman, a Certified Hijama Therapist with years of experience in Sunnah-based healing. My goal is to provide safe, clean, and effective hijama therapy for natural wellness and pain relief. Following the blessed traditions of our Prophet ﷺ, I ensure each session is conducted with the highest standards of hygiene and care.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 mt-6">
+                        <span class="bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-semibold">Certified Therapist</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-semibold">Sunnah Based</span>
+                        <span class="bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-semibold">Years of Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white islamic-pattern">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Our Hijama Services</h2>
+                <p class="text-xl text-gray-600">Professional Islamic healing therapies</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in border border-emerald-100">
+                    <div class="text-4xl text-emerald-600 mb-4">🌟</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Dry Cupping</h3>
+                    <p class="text-gray-600">Gentle suction therapy without incisions for muscle tension relief and improved circulation.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in border border-emerald-100">
+                    <div class="text-4xl text-emerald-600 mb-4">💧</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Wet Cupping</h3>
+                    <p class="text-gray-600">Traditional hijama with controlled incisions for deep detoxification and healing.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in border border-emerald-100">
+                    <div class="text-4xl text-emerald-600 mb-4">🌿</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Detox Therapy</h3>
+                    <p class="text-gray-600">Comprehensive body detoxification through strategic cupping points.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in border border-emerald-100">
+                    <div class="text-4xl text-emerald-600 mb-4">🧠</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Migraine & Headache Relief</h3>
+                    <p class="text-gray-600">Targeted therapy for chronic headaches and migraine pain relief.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hadiths Section -->
+    <section id="hadiths" class="py-20 bg-gradient-to-br from-yellow-50 to-emerald-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4 arabic-font">Prophetic Medicine</h2>
+                <p class="text-xl text-gray-600">Blessed guidance from our beloved Prophet ﷺ</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-yellow-200 fade-in">
+                    <div class="text-center">
+                        <div class="text-5xl mb-4">📿</div>
+                        <p class="text-lg md:text-xl text-gray-700 italic leading-relaxed mb-4 arabic-font">
+                            "Indeed the best of remedies you have is hijama (cupping)."
+                        </p>
+                        <p class="text-emerald-600 font-semibold">— Sahih Bukhari 5696</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-emerald-200 fade-in">
+                    <div class="text-center">
+                        <div class="text-5xl mb-4">🕌</div>
+                        <p class="text-lg md:text-xl text-gray-700 italic leading-relaxed mb-4 arabic-font">
+                            "The best treatment you can use is hijama."
+                        </p>
+                        <p class="text-emerald-600 font-semibold">— Sahih Muslim 1577</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-r from-emerald-100 to-yellow-100 rounded-2xl p-6 text-center fade-in">
+                    <h3 class="text-lg font-bold text-emerald-700 mb-2">🌙 Sunnah Days for Hijama</h3>
+                    <p class="text-gray-700">17th, 19th, 21st of Islamic month</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-white islamic-pattern">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Health Benefits</h2>
+                <p class="text-xl text-gray-600">Proven benefits of hijama therapy</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="flex items-center bg-emerald-50 rounded-xl p-6 fade-in">
+                    <div class="text-3xl text-emerald-600 mr-4">✅</div>
+                    <span class="text-lg font-semibold text-gray-800">Improves blood circulation</span>
+                </div>
+                
+                <div class="flex items-center bg-emerald-50 rounded-xl p-6 fade-in">
+                    <div class="text-3xl text-emerald-600 mr-4">✅</div>
+                    <span class="text-lg font-semibold text-gray-800">Relieves headaches & migraines</span>
+                </div>
+                
+                <div class="flex items-center bg-emerald-50 rounded-xl p-6 fade-in">
+                    <div class="text-3xl text-emerald-600 mr-4">✅</div>
+                    <span class="text-lg font-semibold text-gray-800">Detoxifies body</span>
+                </div>
+                
+                <div class="flex items-center bg-emerald-50 rounded-xl p-6 fade-in">
+                    <div class="text-3xl text-emerald-600 mr-4">✅</div>
+                    <span class="text-lg font-semibold text-gray-800">Boosts immunity</span>
+                </div>
+                
+                <div class="flex items-center bg-emerald-50 rounded-xl p-6 fade-in">
+                    <div class="text-3xl text-emerald-600 mr-4">✅</div>
+                    <span class="text-lg font-semibold text-gray-800">Sunnah healing</span>
+                </div>
+                
+                <div class="flex items-center bg-emerald-50 rounded-xl p-6 fade-in">
+                    <div class="text-3xl text-emerald-600 mr-4">✅</div>
+                    <span class="text-lg font-semibold text-gray-800">Reduces stress & anxiety</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gradient-to-br from-emerald-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Client Reviews</h2>
+                <p class="text-xl text-gray-600">What our clients say about their healing journey</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in">
+                    <div class="flex mb-4">
+                        <span class="star-rating text-xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Very professional, I felt much better after my first session. Alhamdulillah for this blessed healing."</p>
+                    <p class="font-semibold text-emerald-600">— Ahmad K.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in">
+                    <div class="flex mb-4">
+                        <span class="star-rating text-xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Clean, safe, and done according to Sunnah. Highly recommend Brother Haseeb's services."</p>
+                    <p class="font-semibold text-emerald-600">— Fatima S.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in">
+                    <div class="flex mb-4">
+                        <span class="star-rating text-xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Best hijama therapy experience, Alhamdulillah. My back pain is completely gone."</p>
+                    <p class="font-semibold text-emerald-600">— Muhammad A.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in">
+                    <div class="flex mb-4">
+                        <span class="star-rating text-xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">"Professional service with proper Islamic guidelines. My migraines have reduced significantly."</p>
+                    <p class="font-semibold text-emerald-600">— Aisha M.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white islamic-pattern">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">Common questions about hijama therapy</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-emerald-50 rounded-2xl p-6 fade-in">
+                    <h3 class="text-lg font-bold text-emerald-700 mb-2">Is hijama painful?</h3>
+                    <p class="text-gray-700">Only mild pressure, safe and comfortable. Most clients find it relaxing.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg fade-in">
+                    <h3 class="text-lg font-bold text-emerald-700 mb-2">How long does a session take?</h3>
+                    <p class="text-gray-700">Usually 20–40 minutes depending on the treatment area and type.</p>
+                </div>
+                
+                <div class="bg-emerald-50 rounded-2xl p-6 fade-in">
+                    <h3 class="text-lg font-bold text-emerald-700 mb-2">Who can benefit from hijama?</h3>
+                    <p class="text-gray-700">Men and women (with proper consultation and Islamic guidelines).</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 shadow-lg fade-in">
+                    <h3 class="text-lg font-bold text-emerald-700 mb-2">Are there side effects?</h3>
+                    <p class="text-gray-700">Slight marks that fade within days. No serious side effects when done properly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gradient-to-br from-emerald-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Therapy Gallery</h2>
+                <p class="text-xl text-gray-600">Professional hijama therapy sessions</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="gallery-item bg-gradient-to-br from-emerald-100 to-white rounded-2xl p-8 shadow-lg fade-in">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🏥</div>
+                        <h3 class="text-lg font-bold text-emerald-700">Clean Environment</h3>
+                        <p class="text-gray-600">Sterile and hygienic treatment room</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item bg-gradient-to-br from-yellow-100 to-white rounded-2xl p-8 shadow-lg fade-in">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🔬</div>
+                        <h3 class="text-lg font-bold text-emerald-700">Professional Equipment</h3>
+                        <p class="text-gray-600">Modern cupping tools and supplies</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item bg-gradient-to-br from-emerald-100 to-white rounded-2xl p-8 shadow-lg fade-in">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">✨</div>
+                        <h3 class="text-lg font-bold text-emerald-700">Healing Results</h3>
+                        <p class="text-gray-600">Effective therapy outcomes</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item bg-gradient-to-br from-yellow-100 to-white rounded-2xl p-8 shadow-lg fade-in">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🌟</div>
+                        <h3 class="text-lg font-bold text-emerald-700">Before Treatment</h3>
+                        <p class="text-gray-600">Initial consultation and preparation</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item bg-gradient-to-br from-emerald-100 to-white rounded-2xl p-8 shadow-lg fade-in">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">💚</div>
+                        <h3 class="text-lg font-bold text-emerald-700">After Care</h3>
+                        <p class="text-gray-600">Post-treatment guidance and care</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item bg-gradient-to-br from-yellow-100 to-white rounded-2xl p-8 shadow-lg fade-in">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🏆</div>
+                        <h3 class="text-lg font-bold text-emerald-700">Success Stories</h3>
+                        <p class="text-gray-600">Happy and healthy clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section id="certificate" class="py-20 bg-white islamic-pattern">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Professional Certification</h2>
+                <p class="text-xl text-gray-600">Trusted & Certified Hijama Therapist</p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto text-center fade-in">
+                <div class="certificate-frame p-8 bg-white">
+                    <div class="text-6xl mb-6">🏆</div>
+                    <h3 class="text-2xl font-bold text-emerald-700 mb-4">Certified Hijama Therapist</h3>
+                    <p class="text-xl text-gray-700 mb-4">Haseeb ur Rehman</p>
+                    <div class="bg-gradient-to-r from-emerald-100 to-yellow-100 rounded-xl p-6 mb-6">
+                        <p class="text-gray-700">Professionally trained and certified in traditional Islamic cupping therapy with modern hygiene standards.</p>
+                    </div>
+                    <div class="inline-flex items-center bg-emerald-600 text-white px-6 py-3 rounded-full">
+                        <i class="fas fa-certificate mr-2"></i>
+                        <span class="font-semibold">Trusted & Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-emerald-600 to-emerald-700 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+                <p class="text-xl mb-8">Ready to begin your healing journey? Get in touch today!</p>
+                
+                <div class="mb-8">
+                    <a href="tel:03065884334" class="inline-flex items-center text-2xl md:text-3xl font-bold hover:text-yellow-300 transition-colors">
+                        <i class="fas fa-phone-alt mr-3"></i>
+                        0306-5884334
+                    </a>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <a href="tel:03065884334" class="bg-white text-emerald-600 px-6 py-3 rounded-full font-semibold hover:bg-yellow-50 transition-colors">
+                        Call Now
+                    </a>
+                    <a href="https://wa.me/923065884334" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors">
+                        WhatsApp Chat
+                    </a>
+                    <button onclick="alert('Please call 0306-5884334 to book your appointment')" class="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition-colors">
+                        Book Appointment
+                    </button>
+                </div>
+                
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="https://facebook.com/AlnoorHijamacenter" target="_blank" class="text-3xl hover:text-yellow-300 transition-colors">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/alnoor_hijama_therapy" target="_blank" class="text-3xl hover:text-yellow-300 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://alnoorhijama.store" target="_blank" class="text-3xl hover:text-yellow-300 transition-colors">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+                
+                <!-- Google Map Placeholder -->
+                <div class="bg-white/20 rounded-2xl p-8 mb-8">
+                    <h3 class="text-xl font-bold mb-4">📍 Visit Our Clinic</h3>
+                    <p class="mb-4">Professional hijama therapy center in Lahore</p>
+                    <div class="bg-white/10 rounded-xl p-6">
+                        <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                        <p>Contact us for Appointment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold gradient-text mb-4">Alnoor Hijama Center</h3>
+                <p class="text-lg mb-4">Certified Hijama Therapy • Following Prophetic Medicine</p>
+                <p class="text-gray-400 mb-6">We respect your privacy and never share client information.</p>
+                <div class="border-t border-gray-700 pt-6">
+                    <p class="text-gray-400">May Allah grant you complete healing and wellness</p>
+                    <p class="text-sm text-gray-500 mt-2">© 2025 Alnoor Hijama Center. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Hero Banner Slider functionality
+        let currentHeroSlide = 0;
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        const sliderDots = document.querySelectorAll('.slider-dot');
+        
+        function showHeroSlide(index) {
+            heroSlides.forEach(slide => slide.classList.remove('active'));
+            sliderDots.forEach(dot => dot.classList.remove('active'));
+            
+            heroSlides[index].classList.add('active');
+            sliderDots[index].classList.add('active');
+        }
+        
+        function nextHeroSlide() {
+            currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
+            showHeroSlide(currentHeroSlide);
+        }
+        
+        function previousSlide() {
+            currentHeroSlide = (currentHeroSlide - 1 + heroSlides.length) % heroSlides.length;
+            showHeroSlide(currentHeroSlide);
+        }
+        
+        function goToSlide(index) {
+            currentHeroSlide = index;
+            showHeroSlide(currentHeroSlide);
+        }
+        
+        // Auto-advance hero slides every 5 seconds
+        setInterval(nextHeroSlide, 5000);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/98');
+                nav.classList.remove('bg-white/95');
+            } else {
+                nav.classList.add('bg-white/95');
+                nav.classList.remove('bg-white/98');
+            }
+        });
+
+        // Mobile menu toggle (if needed)
+        function toggleMobileMenu() {
+            // Add mobile menu functionality here if needed
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'977d618556499095',t:'MTc1NjY1MjI1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
